@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        
+        body{
+            width: 100%;
+            height: 100vh;
+          background-image: url('data:image/jpeg;base64,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');
+          background-position: center;
+          background-size: cover;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgba(143, 255, 240, 0.705);
+            overflow: hidden;
+        }
+        p{
+            width: 90%;
+            margin: 40px auto;
+            background-color: rgb(163, 195, 255);
+            border-radius: 20px;
+        }
+        h1{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        #inp{
+            border-bottom: 1px solid #0e0d0da4;
+            background-color: transparent;
+        }
+        #inp:focus{
+            border-bottom: 1px solid rgb(0, 0, 0);
+        }
+        #btn{
+            background-color: #00bdd6;
+            color: #fff;
+            font-weight: 600;
+            border: none;
+            padding: 7px 23px;
+        }
+        .banner{
+            margin-left: 280px;
+            width: 750px;
+            border: 2px solid blue;
+            border-radius: 65px;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+    <h1>Search The Word</h1>
+    <p id="para">Mercedes-Benz (German pronunciation: [mɛʁˌtseːdəs ˈbɛnts, -dɛs -] ⓘ),[6][7] <br>commonly referred to as Mercedes and sometimes as Benz, is a German<br> luxury and commercial vehicle automotive brand established in 1926. Mercedes-Benz AG (a Mercedes-Benz<br> Group subsidiary established in 2019) is headquartered in Stuttgart, Baden-Württemberg, Germany.</p>
+    <label for="">Search: <input type="text" id="inp"></label>
+    <button id="btn" onclick="findWord()">Find</button>
+</div>
+    <script>
+        var para = document.getElementById("para");
+var inp = document.getElementById("inp");
+var btn = document.getElementById("btn");
+
+function findWord() {
+    var searchTerm = inp.value.trim();
+
+    if (searchTerm === "") {
+        alert("Please enter a word to find");
+        return;
+    }
+
+    var replacedContent = para.innerHTML.replaceAll(searchTerm, `<span style="background-color: black; color: white;">${searchTerm}</span>`);
+
+    if (replacedContent === para.innerHTML) {
+        alert("No matches found");
+    }
+
+    para.innerHTML = replacedContent;
+}
+
+    </script>
+</body>
+</html>
